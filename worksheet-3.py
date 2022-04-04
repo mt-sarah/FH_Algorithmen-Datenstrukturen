@@ -14,8 +14,8 @@ def hamming(text1, text2):
     distance = 0
     index = 0
     if len(text1) == len(text2):
-        while (index < len(text1)):
-            if(text1[index] != text2[index]):
+        while index < len(text1):
+            if text1[index] != text2[index]:
                 distance += 1
             index += 1
     return distance
@@ -87,23 +87,24 @@ class BookShelf:
 # book5 = Book("Lord of the Rings 1", "JRR Tolkien")
 # book6 = Book("Lord of the Rings 2", "JRR Tolkien")
 # book7 = Book("Lord of the Rings 3", "JRR Tolkien")
-# # book8 = Book("Good Omens")
 # book9 = ["American Gods", "Neil Gaiman"]
 # book10 = 42
 #
-
-# my_book_list = [book1, book2, book5, book7]
+#
+# my_book_list = [book1, book2, book5, book7, book9, book10]
 #
 # my_shelf = BookShelf()
 #
 # my_shelf.add_book_list(my_book_list)
-
+#
 # my_sorted_shelf = my_shelf.books_by_author("JK Rowling")
 # print(my_sorted_shelf)
 # print(my_shelf.books_by_author("JK Rowling"))
 # print(my_shelf.get_books())
-#
+
 # my_shelf.clear_shelf()
-# # my_sorted_shelf.clear_shelf()
+# my_sorted_shelf.clear_shelf()
 # print(my_sorted_shelf)
 # print(my_shelf.books_by_author("JK Rowling"))
+# my_shelf.add_book_list(([book3, book4, book6, book7, book9, book10]))
+# print(my_shelf.get_books())
