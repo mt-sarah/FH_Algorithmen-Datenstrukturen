@@ -1,14 +1,12 @@
 def power(a, b):
-    if b == 0:
-        return 1
-    elif a < 0 or b < 0:
+    if a < 1 or b < 1:
         return -1
 
     else:
-        return a * power(a, b-1)
+        return abs(a * power(a, b-1))
 
 
-# print(power(2, 4))
+# print(power(2, 3))
 
 
 def binary_search(numbers, num, start, end):
